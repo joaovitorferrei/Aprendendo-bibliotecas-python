@@ -18,13 +18,21 @@ class Produto:
         full_path = os.path.join(save_dir, filename)
         codigo_barra.save(full_path)
     
-codigos_produtos = {
-    "açai": "332564812459",
-    "arroz": "156845239452",
-    "feijão": "482345612586",
-    "macarão": "456123889425",
-    "peixe":"158346589425"
-}  
+    def criar_dicionario(self):
+        dicionario = {}
+        while True:
+            try:
+                chave = input("Digite o nome do produto (ou digite 'sair' para encerrar): ")
+                if chave.lower() == 'sair':
+                    break
+                valor = float(input("Digite o valor correspondente: "))
+                dicionario[chave] = valor
+            except ValueError:
+                print("Erro: Valor inválido. Digite um número para o valor.")
+        return dicionario
+
+
+
 
 
 
