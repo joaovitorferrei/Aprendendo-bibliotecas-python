@@ -7,4 +7,4 @@
 ## atenção
 Todas as imagens geradas do codigo de barras
 estão armazenadas na pasta img as imagens ja estão salvas intão so exclua e execute
-dinovo e vai ver a crianção dos codigo de barras
+novamente e vai ver a crianção dos codigo de barras 
